@@ -29,4 +29,25 @@ body {
     font-size: 34px;
     line-height: 130%;
     color: #2F323A;
+    margin-bottom: 20px;
+}
+
+.top-btn {
+    @extend %manrope-500;
+    padding: 12px 48px 12px 24px;
+    gap: 8px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D3;
+    position: relative;
+    font-size: 18px;
+    line-height: 136%;
+    color: #171B24;
+
+    &::after {
+        content: url(../images/icons/arrows-right.svg);
+        position: absolute;
+        top: 13px;
+        right: 10px;
+    }
 }
