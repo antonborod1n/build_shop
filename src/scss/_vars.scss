@@ -52,6 +52,7 @@ $footer: #E8E9EA;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: none;
     padding: 12px 24px;
     gap: 8px;
     width: 246px;
@@ -62,5 +63,11 @@ $footer: #E8E9EA;
     line-height: 25px;
     color: $btn;
     cursor: pointer;
-} 
+}
 
+
+%d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
