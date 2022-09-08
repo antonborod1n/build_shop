@@ -160,10 +160,55 @@
     }
 }
 
+/* BANNER */
+
+.banner {
+    padding: 40px 0 80px;
+}
+
+.banner__inner {
+    background-image: url(../images/slider1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 420px;
+    width: 100%;
+}
+
+.banner__box {
+    padding: 40px 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 450px;
+    height: 360px;
+}
+
+.banner__title {
+    @extend %manrope-700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #171B24;
+    margin-bottom: 20px;
+}
+
+.banner__subtitle {
+    @extend %manrope-400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #454950;
+    margin-bottom: 50px;
+}
+
+.banner__link {
+    width: 147px;
+    @extend %btn;
+}
+
 /* favorite-product */
 
 .favorite-product {
-    padding: 80px 0;
+    padding-bottom: 80px;
 
     &__inner {
         display: grid;
@@ -209,7 +254,7 @@
 /* STOCK */
 
 .stock {
-    padding: 80px 0;
+    padding-bottom: 80px;
 
     &__top {
         display: flex;
@@ -291,6 +336,8 @@
 /* POPULAR */
 
 .popular {
+    padding-bottom: 80px;
+
     &__top {
         display: flex;
         justify-content: space-between;
