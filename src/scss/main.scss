@@ -164,45 +164,45 @@
 
 .banner {
     padding: 40px 0 80px;
-}
 
-.banner__inner {
-    background-image: url(../images/slider1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 420px;
-    width: 100%;
-}
+    &__inner {
+        background-image: url(../images/slider1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 420px;
+        width: 100%;
+    }
 
-.banner__box {
-    padding: 40px 0 0 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 450px;
-    height: 360px;
-}
+    &__box {
+        padding: 40px 0 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 450px;
+        height: 360px;
+    }
 
-.banner__title {
-    @extend %manrope-700;
-    font-size: 48px;
-    line-height: 120%;
-    color: #171B24;
-    margin-bottom: 20px;
-}
+    &__title {
+        @extend %manrope-700;
+        font-size: 48px;
+        line-height: 120%;
+        color: #171B24;
+        margin-bottom: 20px;
+    }
 
-.banner__subtitle {
-    @extend %manrope-400;
-    font-size: 20px;
-    line-height: 140%;
-    color: #454950;
-    margin-bottom: 50px;
-}
+    &__subtitle {
+        @extend %manrope-400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #454950;
+        margin-bottom: 50px;
+    }
 
-.banner__link {
-    width: 147px;
-    @extend %btn;
+    &__link {
+        width: 147px;
+        @extend %btn;
+    }
 }
 
 /* favorite-product */
@@ -387,6 +387,90 @@
     &__img {
         border: 1px solid #E8E9EA;
     }
+}
+
+/* ABOUT */
+
+.about {
+    padding-bottom: 80px;
+
+    &__inner {
+        background-image: url(../images/about.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -25px center;
+        padding: 60px 0 0 200px;
+        min-height: 456px;
+        border-radius: 5px;
+    }
+
+    &__text {
+        max-width: 570px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #2F323A;
+        margin-bottom: 15px;
+    }
+}
+
+/* REVIEWS */
+
+.reviews {
+    background: #F6F6F6;
+    margin-bottom: 80px;
+    padding: 80px 0;
+}
+
+.reviews__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.reviews__item {
+    background: #FFFFFF;
+    border: 1px solid #E8E9EA;
+    padding: 24px;
+    width: 376px;
+    height: 365px;
+}
+
+.reviews__item-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 12px;
+
+    &::after {
+        content: url(../images/taced.svg);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.reviews__user-name {
+    @extend %manrope-700;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 136%;
+    color: #2F323A;
+}
+
+.reviews__content {
+    @extend %manrope-400;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2F323A;
+}
+
+.reviews__data {
+    @extend %manrope-500;
+    font-size: 15px;
+    line-height: 145%;
+    color: #8B8D92;
 }
 
 /* FOOTER */
