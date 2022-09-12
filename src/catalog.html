@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+
+</head>
+
+<body>
+    <%= require('html-loader!./templates/header.html').default %>
+        <main class="main">
+            <%= require('html-loader!./templates/breadcrumbs.html').default %>
+                <section class="catalog">
+                    <div class="container">
+                        <h2 class="title">Сухие смеси</h2>
+                        <div class="catalog__inner">
+                            <div class="filter">
+                                <form class="form__filter" action="#" method="get">
+                                    <label for="#">
+                                        <div class="filter-title">Цена</div>
+                                        <input class="filter-price" type="text">
+                                        <input class="filter-price" type="text">
+                                    </label>
+                                    <label for="#">
+                                        <div class="filter-title">Бренд</div>
+                                        <input class="filter-price" type="search">
+                                        <input class="filter-price" type="checkbox"><span
+                                            class="filter-brend">Braer</span>
+                                        <input class="filter-price" type="checkbox"><span
+                                            class="filter-brend">Mstera</span>
+                                        <input class="filter-price" type="checkbox"><span
+                                            class="filter-brend">Euroblock</span>
+                                        <input class="filter-price" type="checkbox"><span
+                                            class="filter-brend">Гален</span>
+                                        <input class="filter-price" type="checkbox"><span
+                                            class="filter-brend">Decra</span>
+                                    </label>
+                                    <label for="#">
+                                        <div class="filter-title">Поставщик</div>
+                                        <select name="" id="">
+                                            <option value="">Аксон</option>
+                                            <option value="">Бксон</option>
+                                            <option value="">Вксон</option>
+                                        </select>
+                                    </label>
+                                    <input class="filter-btn__submit" type="submit">Применить</input>
+                                    <input class="filter-btn__reset" type="reset">Сбросить</input>
+                                </form>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__filter">
+                                    <button class="catalog__filter-btn">Популярные</button>
+                                    <button class="catalog__filter-btn">Дешевле</button>
+                                    <button class="catalog__filter-btn">Дороже</button>
+                                    <button class="catalog__filter-btn">По алфавиту</button>
+                                </div>
+                                <div class="catalog__product">
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/1.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/2.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/3.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/4.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/5.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/6.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/7.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                    <div class="favorite-product__item">
+                                        <img class="favorite-product__img" src="../images/product/8.jpg" alt="Product">
+                                        <div class="favorite-product__box">
+                                            <p class="favorite-product__title">
+                                                Керамогранит Yasmin 598х185 коричневый C-YA4M112D
+                                            </p>
+                                            <span class="favorite-product__price">899 ₽</span>
+                                        </div>
+                                        <button class="favorite-product__btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="container">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        5
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+        </main>
+        <%= require('html-loader!./templates/footer.html').default %>
+</body>
+
+</html>

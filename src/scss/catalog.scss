@@ -1,0 +1,15 @@
+.catalog__product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+
+.catalog__inner {
+    display: flex;
+    column-gap: 16px;
+}
+
+.filter {
+    border: 1px solid lightcoral;
+    width: 278px;
+}
